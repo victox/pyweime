@@ -8,3 +8,4 @@ import sys
 if __name__ == '__main__':
     print sys.version
     print 'hello'
+    print 'http://blog.csdn.net/laizhenhai88/article/details/7233693'
