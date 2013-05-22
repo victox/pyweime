@@ -32,7 +32,7 @@ if __name__ == '__main__':
 #     print json.dumps(d, indent = 4, ensure_ascii = False)
 
     d = utils.xml2dict(rsp)
-    print json.dumps(d, indent = 4, ensure_ascii = False)
+    print json.dumps(d, indent = 2, ensure_ascii = False)
     
     '''
     json_maker = RequestMaker(defs.APP_KEY, utils.device_id(),

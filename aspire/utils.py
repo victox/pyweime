@@ -42,7 +42,6 @@ def xml2dict(xml):
     ret = {}
     stack = [ret]
     for event, node in iterparse(xml, ['start', 'end']):
-        print node.tag, stack
         if event == 'start':
             last = stack[len(stack)-1]
             if node.getchildren():
@@ -51,6 +50,7 @@ def xml2dict(xml):
                 stack.append(d)
             else:
                 last[node.tag] = node.text
+                stack.append('')
             
         elif event == 'end':
             stack.pop()
